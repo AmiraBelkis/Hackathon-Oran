@@ -12,17 +12,18 @@ export const SideMenu = () => {
     const [active, setActive] = useState("Dashboard");
 
     const menuItems = [
-        { name: "Dashboard", icon: dashboardIcon },
-        { name: "Liste des procès", icon: listIcon },
-        { name: "Payer mes dettes", icon: paymentIcon }, // Renamed to make it more user-friendly
-        { name: "Profil", icon: profileIcon },
-        { name: "Paramétrage", icon: settingsIcon },
+        { name: "Dashboard", icon: dashboardIcon, path: "/" },
+        { name: "Liste des procès", icon: listIcon, path: "/liste-des-proces" },
+        { name: "Payer mes dettes", icon: paymentIcon, path: "/payer-mes-dettes" },
+        { name: "Profil", icon: profileIcon, path: "/profil" },
+        { name: "Paramétrage", icon: settingsIcon, path: "/parametrage" },
     ];
     return (
         <>
             <Nav className="flex-column bg-wight vh-100 p-3 pe-0 side-menu col-sm-3">
                 {menuItems.map((item) => (
                     <Nav.Link
+                        href={item.path}
                         key={item.name}
                         onClick={() => setActive(item.name)}
                         className={`d-flex align-items-center mb-3 ${active === item.name ? "active-menu-item" : ""
