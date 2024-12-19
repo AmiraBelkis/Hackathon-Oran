@@ -14,7 +14,7 @@ export const SideMenu = () => {
     const menuItems = [
         { name: "Dashboard", icon: dashboardIcon },
         { name: "Liste des procès", icon: listIcon },
-        { name: "Mes Paiements", icon: paymentIcon }, // Renamed to make it more user-friendly
+        { name: "Payer mes dettes", icon: paymentIcon }, // Renamed to make it more user-friendly
         { name: "Profil", icon: profileIcon },
         { name: "Paramétrage", icon: settingsIcon },
     ];
