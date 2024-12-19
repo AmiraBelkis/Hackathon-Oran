@@ -4,7 +4,7 @@ import notificationIcon from '../../assets/notification.svg';
 export const Header = () => {
     return (
         <>
-            <header className="bg-light border-bottom py-3">
+            <header className="bg-wight border-bottom py-3">
                 <Container >
                     <Row className="align-items-center">
                         {/* Logo Section */}

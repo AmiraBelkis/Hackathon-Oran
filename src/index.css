@@ -3,6 +3,9 @@
   line-height: 1.5;
   font-weight: 400;
 
+  --primary-color: #5932EA;
+  --link-color: #0C0C0D;
+  --bg-active-menu: #F8F8F8;
 }
 
 body {
